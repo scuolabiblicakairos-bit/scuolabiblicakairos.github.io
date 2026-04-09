@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temi – Scuola Biblica Kairos</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .temi-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem; }
+    .tema-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-left: 4px solid var(--bordeaux);
+      padding: 1.8rem 1.6rem;
+      box-shadow: 0 2px 14px var(--shadow);
+      border-radius: 0 4px 4px 0;
+    }
+    .tema-card h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem; font-weight: 600;
+      color: var(--bordeaux); margin-bottom: 0.6rem;
+    }
+    .tema-card p { font-size: 0.95rem; color: var(--gray); line-height: 1.7; margin-bottom: 0.8rem; }
+    .tema-count {
+      font-family: 'Cinzel', serif; font-size: 0.68rem;
+      letter-spacing: 0.12em; color: var(--bordeaux-mid);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-inner">
+      <a href="index.html" class="site-logo">
+        <span class="logo-main">Scuola Biblica Kairos</span>
+        <span class="logo-sub">Teologia · Scrittura · Vita</span>
+      </a>
+      <nav id="main-nav">
+        <a href="index.html">Home</a>
+        <a href="articoli.html">Articoli</a>
+        <a href="temi.html" class="active">Temi</a>
+        <a href="libri.html">Libri</a>
+        <a href="chi-siamo.html">Chi Siamo</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero" style="padding: 4rem 2rem 3.5rem;">
+    <div class="hero-ornament">Esplora per argomento</div>
+    <h1 style="font-size: clamp(1.8rem, 4vw, 2.8rem);">Temi Teologici</h1>
+    <p>Naviga gli articoli per area tematica e approfondisci i grandi temi della teologia biblica.</p>
+  </section>
+  <div class="gold-divider"></div>
+
+  <main style="max-width: 1100px; margin: 0 auto; padding: 4rem 2rem; position: relative; z-index: 1;">
+    <h2 class="section-title">Aree tematiche</h2>
+    <div class="temi-grid">
+      <div class="tema-card" id="numerologia">
+        <h2>Numerologia Biblica</h2>
+        <p>Il linguaggio numerico della Scrittura: sette, dodici, quaranta, cinquanta e tutti i numeri che Dio usa per rivelare i suoi misteri.</p>
+        <span class="tema-count">4 articoli</span>
+      </div>
+      <div class="tema-card" id="tempio">
+        <h2>Tempio e Tabernacolo</h2>
+        <p>L'architettura della presenza di Dio: dal Tabernacolo nel deserto al Tempio di Salomone fino al corpo di Cristo e alla Nuova Gerusalemme.</p>
+        <span class="tema-count">6 articoli</span>
+      </div>
+      <div class="tema-card" id="feste">
+        <h2>Feste di Israele</h2>
+        <p>Il calendario sacro come profezia: le sette feste di Levitico 23 come mappa del piano redentivo di Dio dalla Pasqua alla Festa dei Tabernacoli.</p>
+        <span class="tema-count">7 articoli</span>
+      </div>
+      <div class="tema-card" id="pneumatologia">
+        <h2>Pneumatologia</h2>
+        <p>Lo Spirito Santo nelle Scritture: la sua persona, la sua opera, i suoi doni, il suo ruolo nella salvezza, nella santificazione e nella vita della chiesa.</p>
+        <span class="tema-count">5 articoli</span>
+      </div>
+      <div class="tema-card" id="antropologia">
+        <h2>Antropologia Biblica</h2>
+        <p>Chi è l'uomo secondo la Scrittura? La tricotomia spirito-anima-corpo, l'immagine di Dio, la caduta e la redenzione dell'essere umano integrale.</p>
+        <span class="tema-count">3 articoli</span>
+      </div>
+      <div class="tema-card" id="escatologia">
+        <h2>Escatologia</h2>
+        <p>Le ultime cose: il ritorno di Cristo, il giudizio, la risurrezione, il millennio, la Nuova Gerusalemme. La speranza biblica come motore della vita cristiana.</p>
+        <span class="tema-count">4 articoli</span>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-logo">Scuola Biblica Kairos</div>
+    <p>Teologia · Scrittura · Vita</p>
+    <p>A cura di Dr. Vincenzo Maggio</p>
+    <div class="soli-deo">Soli Deo Gloria</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
